@@ -21,6 +21,10 @@ body {
     text-align: center;
 }
 
+#header img {
+    position: fixed;
+}
+
 nav {
     align-items: center;
     background-color: #be3144;
