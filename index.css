@@ -44,6 +44,13 @@ nav a {
     text-align: center;
     text-decoration: none;
 }
+
+@media (max-width:360px) {
+    nav a {
+        padding: 10px;
+    }
+}
+
 nav div{
     display: flex;
     justify-content: flex-end;
@@ -124,6 +131,11 @@ nav a:hover {
     object-fit: cover;
 }
 
+@media (max-width:360px) {
+    #project a img {
+        width: 80%;
+    }
+}
 #project-grid a {
     text-decoration: none;
     cursor: pointer;
@@ -136,10 +148,16 @@ nav a:hover {
     text-align: center;
     font-size: 2rem;
     padding: 2rem auto;
-    margin: 0 auto;
+    margin: auto auto;
     text-align: center;
     width: calc(100% - 6.8rem);
     
+}
+
+@media (max-width: 360px) {
+    #project-grid p {
+        width: calc(95% - 6.8rem);   
+    }
 }
 
 #contact {
@@ -159,6 +177,7 @@ nav a:hover {
     color: #f0f0f0;
     font-size: 22px;
     padding: 15px 30px;
+    text-decoration: none;
 }
 
 #contact-links {
@@ -169,24 +188,13 @@ nav a:hover {
     width: 100%;
 }
 
-i.fa-facebook:before {
-    content: "\f082";
+#contact .img {
+    height: 25px;
+    width: 25px;
 }
 
-i.fa-github:before {
-    content: "\f09b";
-}
-
-i.fa-twitter:before {
-    content: "\f099";
-}
-
-i.fa-at::before {
-    content: "\f1fa";
-}
-
-i.fa-mobile-alt:before {
-    content: "\f3cd";
+.github {
+    border-radius: 50%;
 }
 
 .btn:hover {
